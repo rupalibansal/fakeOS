@@ -190,6 +190,8 @@ app3.onclick = function () {
 
   // Create <form> element
   const form = document.createElement("form");
+  form.setAttribute("id", "countryForm");
+
   container.appendChild(form);
 
   // Create <label> element for country input
@@ -207,7 +209,8 @@ app3.onclick = function () {
 
   // Create <button> element
   const button = document.createElement("button");
-  button.textContent = "Get the country details";
+  button.setAttribute("id", "countryButton");
+  button.textContent = "Search";
   form.appendChild(button);
 
   // Create <p> element for "wait" message
